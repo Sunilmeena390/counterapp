@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="domstyle.css">
+</head>
+
+<body>
+    <!-- 
+    events in  js.....
+
+1=on click event
+
+    <button onclick="hello()">click me</button>
+
+<script>
+  function  hello(){
+alert("welcome to full stacck learning")
+    }
+</script> -->
+
+    <!-- 
+<div id="box">
+    <h1>show me a panel</h1>
+
+    <button onclick="">show</button>
+    <button onclick="">hide</button>
+
+</div>
+
+<script>
+
+let a=document.getElementById("box")
+
+a.style.display="non"
+
+</script> -->
+
+    <!-- 
+show hide question on click
+
+<div id="show" onclick="showcontent()" ondblclick="hidecontent()">
+    <h1>click to show panel</h1>
+</div>
+<div id="para">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit, assumenda necessitatibus sequi iure consectetur fuga dolorem veniam dicta nisi fugit quam deserunt at voluptatem expedita soluta, exercitationem vitae quasi? Corrupti maxime repellat ipsam, saepe fugit magni dolores pariatur ab eveniet itaque temporibus delectus soluta distinctio assumenda adipisci cupiditate obcaecati?</p>
+</div>
+
+<script>
+
+function showcontent(){
+    let i = document.getElementById("para")
+    i.style.display="block"
+}
+
+function hidecontent(){
+    let i = document.getElementById("para")
+    i.style.display="none"
+}
+
+</script> -->
+
+    <!-- question 2 box multiple color change
+
+<div id="multiple" onmouseover="change()" onmouseout="rechange()">
+    
+</div>
+
+
+<script>
+
+function change()
+{
+    let i =document.getElementById("multiple");
+
+    i.style="background:yellow"
+}
+
+function rechange()
+{
+    let i =document.getElementById("multiple");
+
+    i.style="background:gold"
+}
+
+
+</script> -->
+<!-- 
+icriment ,diceiment,reset queston------
+question 3 -->
+
+<!-- 
+    <div class="wrapper">
+        0
+    </div>
+
+    <button class="btn" onclick="incriment()">incriment</button>
+    <button class="btn" onclick="decriment()">decriment</button>
+    <button class="btn" onclick="reset()">reset</button>
+
+
+    <script>
+
+        let i = 0;
+
+        function updateDisplay() {
+            document.querySelector(".wrapper").textContent = i;
+        }
+
+        function incriment() {
+            i++;
+            updateDisplay();
+        }
+
+        function decriment() {
+            if (i >= 1) {
+                i--;
+            }
+            else {
+                alert("num is not show in minus")
+            }
+            updateDisplay()
+        }
+        function reset() {
+            i = 0;
+            updateDisplay()
+        }
+
+    </script> -->
+</body>
+
+</html>
